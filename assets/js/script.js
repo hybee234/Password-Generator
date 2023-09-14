@@ -84,7 +84,7 @@ function charInclusion() {
   console.log("***Determining Characters to include***")
   console.log("Included Characters - Before: " + characters)               //[HL] logging
   
-  window.alert("You have selected: \n\nPassword Length: " + charLength + "\nInclude Lower Case? " + lower_case_flag + "\nInclude Upper case? " + upper_case_flag + "\nInclude Numbers? " + numbers_flag + "\nInclude Special Characters? " + special_chars_flag);
+  window.alert("You have selected: \n\nPassword Length: " + charLength + "\nInclude Lower Case? " + lower_case_flag + "\nInclude Upper case? " + upper_case_flag + "\nInclude Numbers? " + numbers_flag + "\nInclude Special Characters? " + special_chars_flag + "\n\nClick OK to see your password!");
 // Add included character sets to "characters" variable
   characters = ""   //reset characters to blank slate before appending
   // Append lower case constant to "characters" if use responds with true
