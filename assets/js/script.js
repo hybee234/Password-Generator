@@ -82,11 +82,10 @@ function charInclusion() {
   console.log("Special Characters Flag: " + special_chars_flag);         //[HL] logging
   console.log("")
   console.log("***Determining Characters to include***")
-  console.log("Included Characters - Before: " + characters)               //[HL] logging
-  
+      
   window.alert("You have selected: \n\nPassword Length: " + charLength + "\nInclude Lower Case? " + lower_case_flag + "\nInclude Upper case? " + upper_case_flag + "\nInclude Numbers? " + numbers_flag + "\nInclude Special Characters? " + special_chars_flag + "\n\nClick OK to see your password!");
 // Add included character sets to "characters" variable
-  characters = ""   //reset characters to blank slate before appending
+  characters = ""   //reset characters to blank slate before appending  
   // Append lower case constant to "characters" if use responds with true
     if (lower_case_flag === true) {
       characters += lowerCaseChar ;
@@ -103,8 +102,7 @@ function charInclusion() {
     if (special_chars_flag === true) {
       characters += specialChar;
     }  
-  
-  console.log("Included Characters - After: " + characters)              //[HL] logging
+    console.log("Included Characters: " + characters)              //[HL] logging
 return;
 };
 
@@ -115,8 +113,7 @@ return;
 function assemblePassword() {
   console.log("")
   console.log("*** Assemling the password ***")
-  console.log("Assembling with these Characters: " + characters)                         // Console log characters included
-  console.log("Assembling an " + charLength + " character password using the " + characters.length + " characters available")                // Console log number of characters included
+  console.log("Assembling " + charLength + " character password using the " + characters.length + " characters included")                // Console log number of characters included
   password = "";    //reset password variable to blank before appending new characters
   //for loop to randomly select characters from "characters"
   for (var i=0; i < charLength; i++ ) {
